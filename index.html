@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>To Do Application</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <main>
+      <section class="first-section">
+        <div class="main-div">
+          <div class="top">
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-battery-full"></i>
+          </div>
+          <p>TO DO</p>
+          <div class="top2">
+            <div class="clock" title="js-time"></div>
+            <div class="date" title="js-new-date"></div>
+          </div>
+        </div>
+      </section>
 
-        <section class="first-section">
-            <div>
-                <i class="fa-solid fa-wifi"></i>
-            </div>
-
-        
-        </section>
-
-
-        <section class="second-sec container">
-            <p class="task"></p> 
-            <input placeholder="Write a Task" type="text" class="form-control"
-                aria-label="Text input with checkbox">
-                <button type="button" class="btn px-5 btn-outline-warning add"><i class="fa-solid fa-plus"></i></button>
-                <button type="button" class="btn px-5 btn-outline-danger delete"><i class="fa-solid fa-trash-can"></i></button>     
-        </section>
+      <section class="second-sec container">
+        <p class="task"></p>
+        <input
+          placeholder="Write a Task"
+          type="text"
+          class="form-control"
+          aria-label="Text input with checkbox"
+        />
+        <button type="button" class="btn px-5 btn-outline-dark bg-dark add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+        <button type="button" class="btn px-5 btn-outline-dark bg-dark delete">
+          <i class="fa-solid fa-trash-can"></i>
+        </button>
+      </section>
+      <audio id="audio" src="./sounds/tink.wav" ></audio>
+      <audio id="audio2" src="./sounds/COMCell_Email sent (ID 1312)_BSB.wav"></audio>
 
     </main>
 
-    <script src="app.js"></script>
-</body>
-
+    <script src="app.js" ></script>
+  </body>
 </html>

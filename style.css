@@ -1,109 +1,116 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Luckiest Guy', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Luckiest Guy", cursive;
+}
+button {
+  color: white !important;
 }
 
 main {
-    height: 100vh;
-    /* border: 2px black solid; */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient(to right bottom, #eedee5, #aca2a9, #6e6a6f, #383739, #030303);
+  height: 100vh;
+  /* border: 2px black solid; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(./img//minimalism-abstract-pattern-digital-art-wallpaper-preview.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .second-sec {
-    /* border: 2px red solid; */
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  /* border: 2px red solid; */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .second-sec input {
-    width: 70%;
-    display: inline;
-    margin-bottom: 2rem;
+  width: 70%;
+  display: inline;
+  margin-bottom: 2rem;
 }
 
 .first-section {
-   
-    background-image: linear-gradient(to right bottom, #331020, #451436, #521c52, #552975, #443c9b);
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    /* opacity: 0.8; */
-
-
-
+  background-image: linear-gradient(
+    to right bottom,
+    #331020,
+    #451436,
+    #521c52,
+    #552975,
+    #443c9b
+  );
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* opacity: 0.8; */
+  border-radius: 10px;
 }
 
 ul {
-    /* border: 5px black solid; */
-    width: 80%;
+  /* border: 5px black solid; */
+  width: 80%;
+  margin-top: 1rem;
 }
 
 ul li {
-    list-style-type: none;
-    /* border: 1px red solid; */
-    width: 80%;
-    /* display: flex; */
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    border: 2px solid rgb(146, 142, 142);
-    border-radius: 10px;
-    background-color: rgb(231, 222, 222);
-    transition: all 1s;
-    padding: 5px;
-    color: black;
-    /* backdrop-filter: blur(5px); */
+  list-style-type: none;
 
+  width: 80%;
+  /* display: flex; */
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  /* border-radius: 10px; */
+  /* background-color: rgb(231, 222, 222); */
+
+  padding: 5px;
+  color: rgb(247, 238, 238);
 }
 
 ul li:hover {
-    cursor: pointer;
-    /* transform: scale(1.1); */
-
+  cursor: pointer;
 }
-
 
 ul li i {
-    display: inline-block;
-    font-size: 1.2rem;
-
-}
-
-li button {
-    border: none;
-    margin-right: 10px;
-    margin-left: 10px;
-
-
-}
-
-li button i {
-    border-radius: 20px;
-
+  /* display: inline-block; */
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .liste {
-    background-color: rgb(62, 105, 62);
-    transform: rotateX(360deg);
-    transition: all 2s;
-
-
+  background-color: rgb(62, 105, 62);
+  transform: rotateX(360deg);
+  transition: all 2s;
 }
 
 .animation {
-    /* transform: perspective(500px) rotateX(360deg); */
-    transform: scaleX(0.01);
-    transition: all 2.5s;
+  transform: scaleX(0.01);
+  transition: all 2.5s;
+}
+
+.main-div {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-size: 1rem;
+}
+.top i {
+  margin-right: 10px;
+}
+.main-div i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
