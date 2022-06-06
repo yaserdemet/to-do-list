@@ -1,7 +1,7 @@
 setTimeout(() => {
   window.location.reload();
 }
-, 30000);
+  , 40000);
 
 
 const audio2 = document.getElementById("audio2");
@@ -28,11 +28,13 @@ section1.appendChild(ul);
 input.focus();
 
 function ekle() {
-  
+
+
+
   if (input.value == "") {
     alert("Please add a task ...");
-  } else if (ul.childElementCount > 10) {
-    alert("You can add only 10 tasks");
+  } else if (ul.childElementCount > 7) {
+    alert("You can add only 8 tasks");
   } else {
     const li = document.createElement("li");
     ul.appendChild(li);
@@ -65,12 +67,12 @@ input.addEventListener("keydown", (e) => {
 
 
 function deleteAll() {
-  
+
   if (ul.childElementCount > 0) {
-   
+
     ul.removeChild(ul.lastElementChild);
- 
-    
+
+
     if (ul.childElementCount > 1) {
       task.innerHTML = `You have ${ul.childElementCount} tasks`;
     }
@@ -83,11 +85,11 @@ function deleteAll() {
 
 
 
-  
+
   } else {
     alert("There is no task to delete");
   }
-  
+
 
 
 }
@@ -116,8 +118,8 @@ ul.addEventListener("click", event => {
 
 
 
-   
-   
+
+
 
     event.target.parentElement.classList.add("animation")
 
@@ -156,15 +158,39 @@ date.innerHTML = `${new Date().toLocaleDateString()}`;
 
 
 
+// ? PART OF AUDIO
 
 
-
-deleteBtn.addEventListener("click" , () => {
+deleteBtn.addEventListener("click", () => {
   audio2.play();
 })
 
 
 button.addEventListener("click", () => {
   audio.play();
- 
+
 });
+
+
+
+
+
+
+// ! PART OF LOCK
+
+const locked = document.querySelector(".fa-lock");
+
+
+button.addEventListener("click", () => {
+
+  locked.setAttribute("class", "fa-solid fa-unlock-keyhole")
+
+})
+
+
+deleteBtn.addEventListener("click", () => {
+
+  if (ul.childElementCount == 0) {
+    locked.setAttribute("class", "fa-solid fa-lock")
+  }
+})

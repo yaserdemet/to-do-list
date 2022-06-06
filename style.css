@@ -17,7 +17,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url(./img//minimalism-abstract-pattern-digital-art-wallpaper-preview.jpg);
+  background-image: linear-gradient(to right top, #ac1624, #bb4854, #c1707f, #c296a2, #c0bbbd);;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
