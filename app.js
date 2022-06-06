@@ -1,7 +1,7 @@
 setTimeout(() => {
   window.location.reload();
 }
-  , 40000);
+  , 200000);
 
 
 const audio2 = document.getElementById("audio2");
