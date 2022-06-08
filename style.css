@@ -29,6 +29,13 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
+  font-size: 1.5rem;
+
+
+}
+.form-control {
+  padding-top: 10px;
+  font-size: 1.2rem;
 }
 
 .second-sec input {
@@ -64,6 +71,9 @@ ul {
 
 ul li {
   list-style-type: none;
+  /* border: 2px red solid; */
+  display: flex;
+  justify-content: space-between;
 
   width: 80%;
   /* display: flex; */
@@ -79,6 +89,7 @@ ul li {
 
 ul li:hover {
   cursor: pointer;
+  
 }
 
 ul li i {
@@ -86,6 +97,7 @@ ul li i {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .liste {
@@ -114,3 +126,4 @@ ul li i {
   cursor: pointer;
   transform: scale(1.1);
 }
+
