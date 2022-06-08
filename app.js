@@ -1,7 +1,7 @@
 setTimeout(() => {
   window.location.reload();
-}, 40000);
-
+}
+  , 200000);
 const audio2 = document.getElementById("audio2");
 const audio = document.getElementById("audio");
 
@@ -134,4 +134,4 @@ deleteBtn.addEventListener("click", () => {
   if (ul.childElementCount == 0) {
     locked.setAttribute("class", "fa-solid fa-lock");
   }
-});
+})
