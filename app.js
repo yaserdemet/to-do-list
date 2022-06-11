@@ -12,6 +12,17 @@ const input = document.querySelector(".form-control");
 const deleteBtn = document.querySelector(".delete");
 // const icon1 = document.querySelector(".fa-trash");
 const task = document.querySelector(".task");
+const alert = document.querySelector(".alert");
+const alert2 = 
+`<div class="alert alert-dark alert-dismissible fade show" role="alert">
+You should check in on some of those fields below.
+<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>`
+
+alert.addEventListener("click", (e) => {
+  e.target.classList.contains("btn-close")
+  ? e.target.parentElement.remove() : null;
+})
 
 const ul = document.createElement("ul");
 section1.appendChild(ul);
@@ -20,10 +31,10 @@ input.focus();
 
 function ekle() {
   if (input.value == "") {
-    alert("Please add a task ...");
-  } else if (ul.childElementCount > 7) {
-    alert("You can add only 8 tasks");
-  } else {
+    alert.innerHTML = alert2;
+  } 
+  
+  else {
     const li = document.createElement("li");
     ul.appendChild(li);
     li.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${input.value} <i class="fa-solid x fa-trash"></i>`;
@@ -48,6 +59,8 @@ input.addEventListener("keydown", (e) => {
     ekle();
     audio.play();
     audio.currentTime = 0;
+    locked.setAttribute("class", "fa-solid fa-unlock-keyhole");
+
   }
 });
 
