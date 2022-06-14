@@ -111,9 +111,16 @@ ul.addEventListener("click", (event) => {
   }
 });
 
+
+// ? clock and date
 const clock = document.querySelector(".clock");
 
-clock.innerHTML = `${new Date().toLocaleTimeString()}`;
+// clock.innerHTML = `${new Date().toLocaleTimeString()}`;
+
+function clockUpdate(){
+  clock.innerHTML = `${new Date().toLocaleTimeString()}`;
+}
+setInterval(clockUpdate, 1000);
 
 const date = document.querySelector(".date");
 date.innerHTML = `${new Date().toLocaleDateString()}`;
