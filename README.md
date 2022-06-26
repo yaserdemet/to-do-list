@@ -2,6 +2,8 @@
 
 ![Animation](https://user-images.githubusercontent.com/99739515/172710857-72e1c4db-9d20-4295-9a1c-7b713d1e7dc7.gif)
 
+👉 [Click here to see page](https://yaserdemet.github.io/to-do-list/)
+
 ## Description
 Project aims to create to do application with HTML CSS and JAVASCRIPT.
 
